@@ -43,6 +43,12 @@ For those times when subreddit moderators have disabled downvotes but you still 
 javascript:var a=document.getElementsByClassName("down"),b;for(b in a)a[b].style.display="block"
 ```
 
+## Vine Downloader
+Opens the MP4 from a single Vine's page
+```javascript
+javascript:open("http://v.cdn.vine.co/r/videos_dashhd/"+/https:\/\/v\.cdn\.vine\.co\/r\/videos\/(.*).jpg/.exec(document.getElementsByTagName("video")[0].poster)[1])
+```
+
 ## Wavo Stems Downloader
 Grabs stems from Wavo.me remix contests even after the contest is over, while bypassing the download gate
 ```javascript
