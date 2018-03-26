@@ -18,6 +18,7 @@ javascript:window.open("https://web.archive.org/web/*/"+window.location.href)
 Adds a capture of the current page to archive.org.
 ```javascript
 javascript:window.open("https://web.archive.org/save/"+window.location.href)
+ 
 ```
 
 ## Google Play App Beta
@@ -66,10 +67,12 @@ javascript:(function(){var a;for(var b in _r)/\/contests\/\w+/.test(b)&&(a=b);wi
 Opens the Web of Trust reputation page for the current domain or subdomain.
 ```javascript
 javascript:open("https://www.mywot.com/scorecard/"+window.location.host)
+ 
 ```
 
 ## Website Grader
 Runs the current domain through HubSpot's Website Grader, checking for basic performance and SEO issues.
 ```javascript
 javascript:window.open("https://website.grader.com/results/"+window.location.hostname)
+ 
 ```
