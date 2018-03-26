@@ -4,7 +4,7 @@ Bookmarklets are little snippets of JavaScript hiding in a bookmark. Think of th
 ## Add to Pocket
 Strips gross GET variables from the URL and adds the page to Pocket
 ```javascript
-javascript:(function (){var a=document.createElement("script");a.type="text/javascript";
+javascript:(function(){var a=document.createElement("script");a.type="text/javascript";
 var b=document.location.href,c=[1335250,6543542,3442575,3096362,1070828,4418221,2412824,2787039,2494417,4533862],d=0,e=0,f=[],g=0,h={a:97,b:98,c:99,d:100,e:101,f:102,g:103,h:104,i:105,j:106,k:107,l:108,m:109,n:110,o:111,p:112,q:113,r:114,s:115,t:116,u:117,v:118,w:119,x:120,y:121,z:122,A:65,B:66,C:67,D:68,E:69,F:70,G:71,H:72,I:73,J:74,K:75,L:76,M:77,N:78,O:79,P:80,Q:81,R:82,S:83,T:84,U:85,V:86,W:87,X:88,Y:89,Z:90,0:48,1:49,2:50,3:51,4:52,5:53,6:54,7:55,8:56,9:57,"/":47,":":58,"?":63,"=":61,"-":45,
 _:95,"&":38,$:36,"!":33,".":46};b=1335250+b;for(var k=0;274>k;k++){for(var m=0;m<b.length;m++){(l=h[b[m]]?h[b[m]]:b.charCodeAt(m))||(l=3);var n=l*(c[d]+l*c[e%25c.length]);f[g]=(f[g]?f[g]+n:n)+k+e;var p=n%2550;if(f[p]){var q=f[g];f[g]=f[p];f[p]=q}e+=n;g=50==g?0:g+=1;d=d==c.length-1?0:d+1}b=e+"";e=0}var r="";for(m=0;m<f.length;m++)r+=String.fromCharCode(f[m]%2525+97);a.src="https://getpocket.com/b/r4.js?h="+(r+"efcc82e294")+"&u="+encodeURIComponent(document.location.href)+"&t="+encodeURIComponent(document.title);
 (document.getElementsByTagName("head")[0]||document.documentElement).appendChild(a)})()
@@ -49,7 +49,7 @@ javascript:window.open("https://developers.google.com/speed/pagespeed/insights/?
 ## Unhide Reddit Downvote Arrows
 For those times when subreddit moderators have disabled downvotes but you still gotta be a jerk anyway
 ```javascript
-javascript:var a=document.getElementsByClassName("down"),b;for(b in a)a[b].style.display="block"
+javascript:(function(){var a=document.getElementsByClassName("down"),b;for(b in a)a[b].style.display="block"})()
 ```
 
 ## Vine Downloader
@@ -61,7 +61,7 @@ javascript:open("http://v.cdn.vine.co/r/videos_dashhd/"+/https:\/\/v\.cdn\.vine\
 ## Wavo Stems Downloader
 Grabs stems from Wavo.me remix contests even after the contest is over, while bypassing the download gate
 ```javascript
-javascript:var a;for(var b in _r)/\/contests\/\w+/.test(b)&&(a=b);window.location=_r[a].downloadPackageUrl
+javascript:(function(){var a;for(var b in _r)/\/contests\/\w+/.test(b)&&(a=b);window.location=_r[a].downloadPackageUrl})()
 ```
 
 ## Web of Trust
