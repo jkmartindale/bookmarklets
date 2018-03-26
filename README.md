@@ -2,7 +2,7 @@
 Bookmarklets are little snippets of JavaScript hiding in a bookmark. Think of them as miniature browser extensions that also work on mobile devices and have more security restrictions imposed upon them by browsers. I've made a bunch of really simple ones to help with various things.
 
 ## Add to Pocket
-Strips the gross GET variables that fill your reading list with duplicate links and adds the page to Pocket
+Strips gross GET variables from the URL and adds the page to Pocket
 ```javascript
 javascript:(function (){var a=document.createElement("script");a.type="text/javascript";
 var b=document.location.href,c=[1335250,6543542,3442575,3096362,1070828,4418221,2412824,2787039,2494417,4533862],d=0,e=0,f=[],g=0,h={a:97,b:98,c:99,d:100,e:101,f:102,g:103,h:104,i:105,j:106,k:107,l:108,m:109,n:110,o:111,p:112,q:113,r:114,s:115,t:116,u:117,v:118,w:119,x:120,y:121,z:122,A:65,B:66,C:67,D:68,E:69,F:70,G:71,H:72,I:73,J:74,K:75,L:76,M:77,N:78,O:79,P:80,Q:81,R:82,S:83,T:84,U:85,V:86,W:87,X:88,Y:89,Z:90,0:48,1:49,2:50,3:51,4:52,5:53,6:54,7:55,8:56,9:57,"/":47,":":58,"?":63,"=":61,"-":45,
