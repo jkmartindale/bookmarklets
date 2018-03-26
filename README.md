@@ -11,6 +11,7 @@ javascript:(function(){document.addEventListener("securitypolicyviolation",funct
 Searches archive.org for captures of the current webpage.
 ```javascript
 javascript:window.open("https://web.archive.org/web/*/"+window.location.href)
+ 
 ```
 
 ## Archive.org Save
