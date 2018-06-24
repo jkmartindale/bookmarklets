@@ -1,13 +1,7 @@
-<!--{% comment %}-->
-Hey you should go to [GitHub Pages](https://jkmartindale.github.io/bookmarklets/) instead ok
-<!--{% endcomment %}-->
-
-[(Test Iteration 9)]({{"javascript:alert('hi')"}})
-
 {% comment %}
-<!--
 
-{% endcomment %}
+GitHub doesn't support JavaScript links, so go to [GitHub Pages](https://jkmartindale.github.io/bookmarklets/) instead ok
+<!--{% endcomment %}
 # bookmarklets
 Bookmarklets are little snippets of JavaScript hiding in a bookmark. Think of them as miniature browser extensions that also work on mobile devices and have more security restrictions imposed upon them by browsers. I've made a bunch of really simple ones to help with various things.
 
