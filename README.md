@@ -1,4 +1,4 @@
-{% comment %}  
+[comment]: / "{% comment %}"
 # Read about and install my bookmarklets [here](https://jkmartindale.github.io/bookmarklets/)
 (GitHub doesn't support JavaScript links)
 <!--{% endcomment %}
@@ -82,4 +82,5 @@ javascript:window.open("https://website.grader.com/results/"+window.location.hos
  
 ```
 {% comment %}
--->{% endcomment %}
+-->
+[comment]: / "{% endcomment %}"
