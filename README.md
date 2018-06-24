@@ -4,7 +4,10 @@ Hey you should go to [GitHub Pages](https://jkmartindale.github.io/bookmarklets/
 
 [test8]({{"javascript:alert('hi')"}})
 
-<!--{% comment %}
+{% comment %}
+<!--- 
+
+{% endcomment %}
 # bookmarklets
 Bookmarklets are little snippets of JavaScript hiding in a bookmark. Think of them as miniature browser extensions that also work on mobile devices and have more security restrictions imposed upon them by browsers. I've made a bunch of really simple ones to help with various things.
 
@@ -83,4 +86,4 @@ Runs the current domain through HubSpot's Website Grader, checking for basic per
 javascript:window.open("https://website.grader.com/results/"+window.location.hostname)
  
 ```
--->
+--->
