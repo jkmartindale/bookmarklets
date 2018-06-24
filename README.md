@@ -80,5 +80,7 @@ Runs the current domain through HubSpot's Website Grader, checking for basic per
 ```javascript
 javascript:window.open("https://website.grader.com/results/"+window.location.hostname)
  
-```
--->{% endcomment %}
+```{% comment %}
+-->
+
+{% endcomment %}
