@@ -1,6 +1,10 @@
 <!--{% comment %}-->
 ## Read about and install my bookmarklets [here](https://jkmartindale.github.io/bookmarklets/)
 (GitHub doesn't support JavaScript links)
+
+&nbsp;
+<!--{% endcomment %}-->
+{% comment %}
 <!--{% endcomment %}
 Iteration 2
 # bookmarklets
@@ -81,6 +85,4 @@ Runs the current domain through HubSpot's Website Grader, checking for basic per
 javascript:window.open("https://website.grader.com/results/"+window.location.hostname)
  
 ```{% comment %}
--->
-
-{% endcomment %}
+-->{% endcomment %}
