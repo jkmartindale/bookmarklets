@@ -1,6 +1,6 @@
 <!--{% comment %}-->
-## Read about and install my bookmarklets [here](https://jkmartindale.github.io/bookmarklets/)
-(GitHub doesn't support JavaScript links)
+# Bookmarklets
+This repository holds the source code for the smattering of arbitrary bookmarklets I've written. For details and installation, head over to my [bookmarklets page](https://jkmartindale.github.io/bookmarklets/).
 
 &nbsp;
 <!--{% endcomment %}-->
