@@ -1,11 +1,12 @@
 <!--{% comment %}-->
 Hey you should go to [GitHub Pages](https://jkmartindale.github.io/bookmarklets/) instead ok
-
 <!--{% endcomment %}-->
+
+[test8]({{"javascript:alert('hi')"}})
+
+<!--{% comment %}
 # bookmarklets
 Bookmarklets are little snippets of JavaScript hiding in a bookmark. Think of them as miniature browser extensions that also work on mobile devices and have more security restrictions imposed upon them by browsers. I've made a bunch of really simple ones to help with various things.
-<!--- triple gay --->
-[test7]({{"javascript:alert('hi')"}})
 
 ## Add to Pocket
 Strips gross GET variables from the URL and adds the page to Pocket. Doesn't work on webpages with a Content Security Policy, but instead of failing silently it'll 1) tell you that a CSP is in place and 2) strip GET variables from the URL so that you can save to Pocket with the Share menu or otherwise.
@@ -82,3 +83,4 @@ Runs the current domain through HubSpot's Website Grader, checking for basic per
 javascript:window.open("https://website.grader.com/results/"+window.location.hostname)
  
 ```
+-->
