@@ -2,7 +2,7 @@
 Hey you should go to [GitHub Pages](https://jkmartindale.github.io/bookmarklets/) instead ok
 <!--{% endcomment %}-->
 
-[test8]({{"javascript:alert('hi')"}})
+[(Test Iteration 8)]({{"javascript:alert('hi')"}})
 
 {% comment %}
 <!--- 
