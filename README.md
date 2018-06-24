@@ -5,7 +5,7 @@ Hey you should go to [GitHub Pages](https://jkmartindale.github.io/bookmarklets/
 [(Test Iteration 8)]({{"javascript:alert('hi')"}})
 
 {% comment %}
-<!--- 
+<!--
 
 {% endcomment %}
 # bookmarklets
@@ -86,4 +86,5 @@ Runs the current domain through HubSpot's Website Grader, checking for basic per
 javascript:window.open("https://website.grader.com/results/"+window.location.hostname)
  
 ```
---->
+{% comment %}
+-->{% endcomment %}
