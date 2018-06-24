@@ -1,3 +1,8 @@
+{% comment %}
+This should only show up on GitHub, not GitHub Pages
+{% endcomment %}
+hmm
+
 # bookmarklets
 Bookmarklets are little snippets of JavaScript hiding in a bookmark. Think of them as miniature browser extensions that also work on mobile devices and have more security restrictions imposed upon them by browsers. I've made a bunch of really simple ones to help with various things.
 
