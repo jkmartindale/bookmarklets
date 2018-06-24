@@ -1,5 +1,6 @@
 {% comment %}  
-GitHub doesn't support JavaScript links, so go to [GitHub Pages](https://jkmartindale.github.io/bookmarklets/) instead ok
+# Read about and install my bookmarklets [here](https://jkmartindale.github.io/bookmarklets/)
+(GitHub doesn't support JavaScript links)
 <!--{% endcomment %}
 Iteration 1
 # bookmarklets
