@@ -1,3 +1,7 @@
 plugins:
   - jekyll-sitemap
 theme: jekyll-theme-hacker
+title: Bookmarklets by James Martindale
+twitter:
+  card: summary
+  username: jkmartindale
