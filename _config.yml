@@ -1,4 +1,5 @@
 plugins:
+  - jekyll-redirect-from
   - jekyll-sitemap
 theme: jekyll-theme-hacker
 title: Bookmarklets by James Martindale
