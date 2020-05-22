@@ -80,13 +80,6 @@ Opens the MP4 from a single Vine's page.
 javascript:open("http://v.cdn.vine.co/r/videos_dashhd/"+/https:\/\/v\.cdn\.vine\.co\/r\/videos\/(.*).jpg/.exec(document.getElementsByTagName("video")[0].poster)[1])
 ```
 
-# Wavo Stems Downloader
-Grabs stems from Wavo.me remix contests even after the contest is over, while
-bypassing the download gate.
-```javascript
-javascript:(function(){var a;for(var b in _r)/\/contests\/\w+/.test(b)&&(a=b);window.location=_r[a].downloadPackageUrl})()
-```
-
 # Web of Trust
 Opens the Web of Trust reputation page for the current domain or subdomain.
 ```javascript
