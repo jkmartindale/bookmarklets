@@ -26,6 +26,15 @@ javascript:window.open("https://web.archive.org/save/"+window.location.href)
  
 ```
 
+# Clean Ellucian Banner Transcript
+Banner is hot garbage and their unofficial transcript page looks disgusting.
+This helps make things look nicer for printing.
+[[Unminified]](https://github.com/jkmartindale/bookmarklets/blob/master/clean-banner-transcript.js)
+```javascript
+javascript:function d(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}}document.getElementsByClassName("pageheaderdiv1")[0].remove();document.getElementsByClassName("headerlinksdiv")[0].remove();document.getElementsByClassName("plaintable")[0].remove();document.getElementsByClassName("headerwrapperdiv")[0].style.paddingTop=0;
+[].concat(function(a){if(!(a instanceof Array)){var b="undefined"!=typeof Symbol&&Symbol.iterator&&a[Symbol.iterator];a=b?b.call(a):{next:d(a)};for(var c=[];!(b=a.next()).done;)c.push(b.value);a=c}return a}(document.getElementsByClassName("pagebodydiv")[0].childNodes)).map(function(a){a.nodeType!=Node.TEXT_NODE&&"A"!=a.tagName||a.remove()});document.styleSheets[1].insertRule("tr{break-inside:avoid}");
+```
+
 # Google Play App Beta
 Activate this bookmarklet on a Google Play app page to enroll in the beta program (if there is one).
 ```javascript
