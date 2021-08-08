@@ -12,14 +12,6 @@ bookmarklets I've written. For details and installation, head over to my
 Searches archive.org for captures of the current webpage.
 ```javascript
 javascript:window.open("https://web.archive.org/web/*/"+window.location.href)
- 
-```
-
-# Archive.org Save
-Adds a capture of the current page to archive.org.
-```javascript
-javascript:window.open("https://web.archive.org/save/"+window.location.href)
- 
 ```
 
 # Clean Ellucian Banner Transcript
