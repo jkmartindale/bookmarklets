@@ -92,6 +92,12 @@ gotta be a jerk anyway.
 javascript:(function(){var a=document.getElementsByClassName("down"),b;for(b in a)a[b].style.display="block"})()
 ```
 
+# Targeter
+Tap/click somewhere and get a best effort guess for a target to use to jump to that part of the page. Probably doesn't work very well.
+```javascript
+function b(a){document.body.style.cursor="default";document.removeEventListener("click",b,!1);a=a||window.event;a=a.target||a.srcElement;a=a==document.body?null:a.id?a.id:a.name?a.name:void 0;for(console.log("I think the ideal target would be "+a.id);!a.id;){console.log(a);if(a==document.body)return;a=a.previousElementSibling||a.parentNode}console.log(a)}document.addEventListener("click",b,!1);document.body.style.cursor="crosshair";
+```
+
 # Vine Downloader
 Opens the MP4 from a single Vine's page.
 ```javascript
