@@ -1,8 +1,6 @@
 <!--{% comment %}-->
 # Bookmarklets
-This repository holds the source code for the smattering of arbitrary
-bookmarklets I've written. For details and installation, head over to my
-[bookmarklets page](https://jkmartindale.github.io/bookmarklets/).
+This repository holds the source code for the smattering of arbitrary bookmarklets I've written. For details and installation, head over to my [bookmarklets page](https://jkmartindale.github.io/bookmarklets/).
 
 &nbsp;
 <!--{% endcomment %}-->
@@ -15,9 +13,8 @@ javascript:window.open("https://web.archive.org/web/*/"+window.location.href)
 ```
 
 # Clean Ellucian Banner Transcript
-Banner is hot garbage and their unofficial transcript page looks disgusting.
-This helps make things look nicer for printing.
-[[Unminified]](https://github.com/jkmartindale/bookmarklets/blob/master/clean-banner-transcript.js)
+Banner is hot garbage and their unofficial transcript page looks disgusting. This helps make things look nicer for printing.
+[[Unminified]](https://github.com/jkmartindale/bookmarklets/blob/main/clean-banner-transcript.js)
 ```javascript
 javascript:function d(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}}document.getElementsByClassName("pageheaderdiv1")[0].remove();document.getElementsByClassName("headerlinksdiv")[0].remove();document.getElementsByClassName("plaintable")[0].remove();document.getElementsByClassName("headerwrapperdiv")[0].style.paddingTop=0;
 [].concat(function(a){if(!(a instanceof Array)){var b="undefined"!=typeof Symbol&&Symbol.iterator&&a[Symbol.iterator];a=b?b.call(a):{next:d(a)};for(var c=[];!(b=a.next()).done;)c.push(b.value);a=c}return a}(document.getElementsByClassName("pagebodydiv")[0].childNodes)).map(function(a){a.nodeType!=Node.TEXT_NODE&&"A"!=a.tagName||a.remove()});document.styleSheets[1].insertRule("tr{break-inside:avoid}");
@@ -30,21 +27,20 @@ javascript:(function(){var a=window.location.pathname,b=/(\/\w{0,3}\/\w+)\/?(ref
 ```
 
 # Enable Selection
-For when websites are jerks and don't want you selecting stuff.
+For when websites are jerks and don't want you selecting stuff.  
+[[Unminified]](https://github.com/jkmartindale/bookmarklets/blob/main/enable-selection.js)
 ```javascript
 document.g=null;document.oncontextmenu=null;document.onkeydown=null;document.onselectstart=null;document.onmousedown=null;document.onclick=null;document.body.onselectstart=null;document.body.onmousedown=null;document.body.classList.remove("unselectable");document.documentElement.style.userSelect="auto";document.body.style.cursor="auto";
 ```
 
 # Google Play App Beta
-Activate this bookmarklet on a Google Play app page to enroll in the beta
-program (if there is one).
+Activate this bookmarklet on a Google Play app page to enroll in the beta program (if there is one).
 ```javascript
 javascript:window.location="https://play.google.com/apps/testing/"+window.location.href.match(/https:\/\/play\.google\.com\/store\/apps\/details\?id=([\w.]+)/)[1]
 ```
 
 # Google Play Music Cover Art
-Activate this bookmarklet on an album page on Google Play to grab some
-high-resolution cover art.
+Activate this bookmarklet on an album page on Google Play to grab some high-resolution cover art.
 ```javascript
 javascript:open(document.getElementsByClassName("cover-image")[0].src.replace("w300-rw", "w16383-rw"))
 ```
@@ -67,8 +63,7 @@ javascript:history.pushState({}, '', window.location.protocol + '//' + window.lo
 ```
 
 # PageSpeed Insights
-Runs the current webpage through Google PageSpeed Insights to get suggestions
-for making the webpage faster.
+Runs the current webpage through Google PageSpeed Insights to get suggestions for making the webpage faster.
 ```javascript
 javascript:window.open("https://developers.google.com/speed/pagespeed/insights/?url="+window.location.href)
 ```
@@ -86,14 +81,14 @@ javascript:var a=g_rgAssets[Object.keys(g_rgAssets)[0]],b=a[Object.keys(a)[0]],c
 ```
 
 # Unhide Reddit Downvote Arrows
-For those times when subreddit moderators have disabled downvotes but you still
-gotta be a jerk anyway.
+For those times when subreddit moderators have disabled downvotes but you still gotta be a jerk anyway.
 ```javascript
 javascript:(function(){var a=document.getElementsByClassName("down"),b;for(b in a)a[b].style.display="block"})()
 ```
 
 # Targeter
-Tap/click somewhere and get a best effort guess for a target to use to jump to that part of the page. Probably doesn't work very well.
+Tap/click somewhere and get a best effort guess for a target to use to jump to that part of the page. Probably doesn't work very well.  
+[[Unminified]](https://github.com/jkmartindale/bookmarklets/blob/main/targeter.js)
 ```javascript
 function b(a){document.body.style.cursor="default";document.removeEventListener("click",b,!1);a=a||window.event;a=a.target||a.srcElement;a=a==document.body?null:a.id?a.id:a.name?a.name:void 0;for(console.log("I think the ideal target would be "+a.id);!a.id;){console.log(a);if(a==document.body)return;a=a.previousElementSibling||a.parentNode}console.log(a)}document.addEventListener("click",b,!1);document.body.style.cursor="crosshair";
 ```
@@ -108,7 +103,6 @@ javascript:open("http://v.cdn.vine.co/r/videos_dashhd/"+/https:\/\/v\.cdn\.vine\
 Opens the Web of Trust reputation page for the current domain or subdomain.
 ```javascript
 javascript:open("https://www.mywot.com/scorecard/"+window.location.host)
- 
 ```
 
 # Website Grader
