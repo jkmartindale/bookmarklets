@@ -29,6 +29,12 @@ Copies a minified version of the current Amazon store page without all the gross
 javascript:(function(){var a=window.location.pathname,b=/(\/\w{0,3}\/\w+)\/?(ref)?/.exec(a);a=window.location.origin+(b?b[1]:a);history.pushState(void 0,void 0,a);b=document.createElement("textarea");b.value=a;document.body.appendChild(b);b.select();document.execCommand("copy");document.body.removeChild(b)})()
 ```
 
+# Enable Selection
+For when websites are jerks and don't want you selecting stuff.
+```javascript
+document.g=null;document.oncontextmenu=null;document.onkeydown=null;document.onselectstart=null;document.onmousedown=null;document.onclick=null;document.body.onselectstart=null;document.body.onmousedown=null;document.body.classList.remove("unselectable");document.documentElement.style.userSelect="auto";document.body.style.cursor="auto";
+```
+
 # Google Play App Beta
 Activate this bookmarklet on a Google Play app page to enroll in the beta
 program (if there is one).
