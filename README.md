@@ -23,6 +23,12 @@ javascript:function d(a){var b=0;return function(){return b<a.length?{done:!1,va
 [].concat(function(a){if(!(a instanceof Array)){var b="undefined"!=typeof Symbol&&Symbol.iterator&&a[Symbol.iterator];a=b?b.call(a):{next:d(a)};for(var c=[];!(b=a.next()).done;)c.push(b.value);a=c}return a}(document.getElementsByClassName("pagebodydiv")[0].childNodes)).map(function(a){a.nodeType!=Node.TEXT_NODE&&"A"!=a.tagName||a.remove()});document.styleSheets[1].insertRule("tr{break-inside:avoid}");
 ```
 
+# Copy Amazon Link
+Copies a minified version of the current Amazon store page without all the gross tracking crap.
+```javascript
+javascript:(function(){var a=window.location.pathname,b=/(\/\w{0,3}\/\w+)\/?(ref)?/.exec(a);a=window.location.origin+(b?b[1]:a);history.pushState(void 0,void 0,a);b=document.createElement("textarea");b.value=a;document.body.appendChild(b);b.select();document.execCommand("copy");document.body.removeChild(b)})()
+```
+
 # Google Play App Beta
 Activate this bookmarklet on a Google Play app page to enroll in the beta
 program (if there is one).
@@ -43,11 +49,34 @@ Looks up the WHOIS record of the current domain.
 javascript:window.open("https://whois.icann.org/en/lookup?name="+window.location.hostname)
 ```
 
+# New York Times Paywall Bypass
+```javascript
+javascript:document.cookie="nyt-m=;expires=Thu, 01 Jan 1970 00:00:01 GMT;domain=.nytimes.com;path=/";location.reload()
+```
+
+# noquery
+Removes from the address bar the crap after the question mark in the current URL.
+```javascript
+javascript:history.pushState({}, '', window.location.protocol + '//' + window.location.host + window.location.pathname)
+```
+
 # PageSpeed Insights
 Runs the current webpage through Google PageSpeed Insights to get suggestions
 for making the webpage faster.
 ```javascript
 javascript:window.open("https://developers.google.com/speed/pagespeed/insights/?url="+window.location.href)
+```
+
+# Spotify Cover Art
+Opens the cover art from a Spotify album page in a new tab.
+```javascript
+javascript:let srcset = document.body.querySelectorAll("img[srcset]")[0].srcset.split(", "); open(srcset[srcset.length - 1].split(" ")[0])
+```
+
+# Steam Gem Value
+Activate this bookmarklet on an item listing in the Steam Community Market to find out how much an item is worth in gems. For details on how this works, see [this Arqade answer](https://gaming.stackexchange.com/a/351941/218385).
+```javascript
+javascript:var a=g_rgAssets[Object.keys(g_rgAssets)[0]],b=a[Object.keys(a)[0]],c=b[Object.keys(b)[0]],gem_action=c.owner_actions&&c.owner_actions.filter(function(d){return/javascript:GetGooValue/.test(d.link)})[0];if(gem_action){var matches=gem_action.link.match(/javascript:GetGooValue\( '%contextid%', '%assetid%', (\d+), (\d+), \d+ \)/);fetch("https://steamcommunity.com/auction/ajaxgetgoovalueforitemtype/?appid="+matches[1]+"&item_type="+matches[2]+"&border_color=0").then(function(d){return d.json()}).then(function(d){alert("This is worth "+d.goo_value+" gems")})["catch"](function(d){return console.error(d)})}else alert("This is worth 0 gems");
 ```
 
 # Unhide Reddit Downvote Arrows
@@ -75,6 +104,16 @@ Runs the current domain through HubSpot's Website Grader, checking for basic
 performance and SEO issues.
 ```javascript
 javascript:window.open("https://website.grader.com/results/"+window.location.hostname)
- 
+```
+
+# WIRED Paywall Bypass
+```javascript
+javascript:document.cookie="pay_ent_smp=;expires=Thu, 01 Jan 1970 00:00:01 GMT;domain=.wired.com;path=/";location.reload()
+```
+
+# YELL
+Uppercases the selected text.
+```javascript
+javascript:(()=>{var selection = window.getSelection();var original = selection.anchorNode.textContent;selection.anchorNode.textContent = selection.anchorNode.textContent.replace(original, original.toUpperCase());})();
 ```{% comment %}
 -->{% endcomment %}
